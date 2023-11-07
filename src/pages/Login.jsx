@@ -24,7 +24,9 @@ const Login = () => {
     const handlegoogle=()=>{
          google()
          .then(result=>console.log('login succefull',result))
-         .catch(error=>console.log(error))
+         .catch(error=>{
+          console.log(error)
+        })
     }
     return (
         <div>
