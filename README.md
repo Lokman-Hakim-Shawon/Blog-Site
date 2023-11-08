@@ -1,4 +1,4 @@
-# assignment_category_0006
+### assignment_category_0006
 * Home page এ নতুন post করা last ৬ টা card দেখাবে।
 * ‍user চাইলে add blog থেকে data post করতে পারবে।  data post করলে home page তার data show করবে।
 * একজন user website এর সকল data দেখতে চাইলে ‍All blogs এ গেলে দেখতে পারবে।
