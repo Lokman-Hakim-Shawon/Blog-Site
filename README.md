@@ -1,3 +1,4 @@
+## https://decoded-petal-377806.web.app/
 ### assignment_category_0006
 * Home page এ নতুন post করা last ৬ টা card দেখাবে।
 * ‍user চাইলে add blog থেকে data post করতে পারবে।  data post করলে home page তার data show করবে।
