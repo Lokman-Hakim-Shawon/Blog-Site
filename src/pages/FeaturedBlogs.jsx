@@ -6,7 +6,7 @@ const FeaturedBlogs = () => {
     // const [number,setnumber]=useState(1)
     
     useEffect(()=>{
-        fetch('http://localhost:5000/datas')
+        fetch('https://assignment-11-database.vercel.app/datas')
         .then(res=>res.json())
         .then(datas=>
             {

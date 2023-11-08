@@ -8,12 +8,12 @@ const Wishlist = () => {
     const [data,setdata]=useState([])
     const email=user?.email
     useEffect(()=>{
-        fetch('http://localhost:5000/wishlist_data')
+        fetch('https://assignment-11-database.vercel.app/wishlist_data')
          .then(res=>res.json())
          .then(data=>setdata(data))
         },[])
         const handledelete=(id)=>{
-            fetch(`http://localhost:5000/wishlist_data/${id}`,{
+            fetch(`https://assignment-11-database.vercel.app/wishlist_data/${id}`,{
                 method:"DELETE"
             })
             .then(res=>res.json())

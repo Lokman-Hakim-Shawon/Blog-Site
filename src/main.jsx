@@ -60,7 +60,7 @@ const router = createBrowserRouter([
       {
         path:'/update/:id',
         element:<PrivateRout><UpdateData></UpdateData></PrivateRout>,
-        loader:({params})=>fetch(`http://localhost:5000/datas/${params.id}`)
+        loader:({params})=>fetch(`https://assignment-11-database.vercel.app/datas/${params.id}`)
       }
     ]
   }

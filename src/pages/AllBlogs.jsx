@@ -10,7 +10,7 @@ const AllBlogs = () => {
     const{user}=useContext(AuthContext)
     const useremail=user?.email
     useEffect(()=>{
-        fetch('http://localhost:5000/datas')
+        fetch('https://assignment-11-database.vercel.app/datas')
         .then(res=>res.json())
         .then(data=>setdata(data))
     },[])
@@ -35,7 +35,7 @@ const AllBlogs = () => {
         }
         console.log(dataobj)
         // const data={datas,user}
-        fetch('http://localhost:5000/wishlist_data',{
+        fetch('https://assignment-11-database.vercel.app/wishlist_data',{
             method:"POST",
             headers:{
                 'content-type':'application/json'

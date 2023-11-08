@@ -9,7 +9,7 @@ const Details = () => {
     const [comment,setcomment]=useState('')
     const [commentdata,setcommentdata]=useState([])
     useEffect(()=>{
-      fetch('http://localhost:5000/comment')
+      fetch('https://assignment-11-database.vercel.app/comment')
       .then(res=>res.json())
       .then(data=>setcommentdata(data))
     },[])
@@ -39,7 +39,7 @@ const Details = () => {
         toast("Can not comment on own blog")
       }
       else{
-        fetch('http://localhost:5000/comment',{
+        fetch('https://assignment-11-database.vercel.app/comment',{
         method:"POST",
         headers:{
           'content-type':"application/json"

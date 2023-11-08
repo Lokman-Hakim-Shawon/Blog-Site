@@ -17,7 +17,7 @@ const UpdateData = () => {
     const longDes=form.longDes.value
     const user={image,title,category,shortDes,longDes}
     console.log(user)
-    fetch(`http://localhost:5000/datas/${state}`,{
+    fetch(`https://assignment-11-database.vercel.app/datas/${state}`,{
      method:"PUT",
      headers:{
        'content-type':'application/json'

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const ServicesSection = () => {
     const [data,setdata]=useState([])
     useEffect(()=>{
-        fetch('http://localhost:5000/datas')
+        fetch('https://assignment-11-database.vercel.app/datas')
         .then(res=>res.json())
         .then(data=>setdata(data))
     },[])

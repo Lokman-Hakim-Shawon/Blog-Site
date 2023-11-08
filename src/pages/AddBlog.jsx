@@ -21,7 +21,7 @@ const AddBlog = () => {
    const longDes=form.longDes.value
    const user={photoURL,email,image,title,category,shortDes,longDes}
    console.log(user)
-   fetch('http://localhost:5000/datas',{
+   fetch('https://assignment-11-database.vercel.app/datas',{
     method:"POST",
     headers:{
       'content-type':'application/json'
