@@ -46,12 +46,12 @@ const RecentBlogs = () => {
             {
                 data.slice(-6).reverse().map(datas=><div 
                key={datas._id} className="card bg-base-100 shadow-xl">
-                <figure><img src={datas.image} alt="Shoes" /></figure>
+                <figure><Link to={`/photo/${datas._id}`} state={datas.image}><img src={datas.image} alt="Shoes" /></Link></figure>
                 <div className="card-body">
                   <h2 className="card-title">{datas.category}</h2>
                   <h2 className="card-title font-normal">{datas.title}</h2>
                   {
-                    datas.shortDes.length>50?
+                    datas.shortDes.length>50 ?
                     <p>{datas.shortDes.slice(0,100)}</p>
                     :
                     <p>{datas.shortDes}</p>

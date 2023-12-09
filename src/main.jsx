@@ -18,6 +18,7 @@ import PrivateRout from './authentication/PrivateRout';
 import Details from './pages/Details';
 import UpdateData from './pages/UpdateData';
 import ErrorPage from './pages/ErrorPage';
+import PhotoView from './pages/PhotoView';
 
 const router = createBrowserRouter([
   {
@@ -63,7 +64,11 @@ const router = createBrowserRouter([
         loader:({params})=>fetch(`https://assignment-11-database.vercel.app/datas/${params.id}`)
       }
     ]
-  }
+  },
+   {
+    path:'/photo/:id',
+    element:<PhotoView></PhotoView>
+   }
   
 ]);
 

@@ -3,6 +3,7 @@ import { AuthContext } from "../authentication/Authprovider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Link } from 'react-router-dom';
+// import axios from "axios";
 
 
 const Login = () => {
@@ -15,6 +16,8 @@ const Login = () => {
         console.log(email,password)
         login(email,password)
         .then(result=>{
+          const loggedInuser=result.user
+          console.log(loggedInuser)
           toast('login successfull !!',result)
         })
         .catch(error=>{
