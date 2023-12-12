@@ -75,7 +75,7 @@ const AllBlogs = () => {
 
             <button onClick={()=>Search(select)} className="btn btn-primary ml-5 px-10">search</button>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
+            <div className="grid grid-cols-1 px-5 md:grid-cols-2 lg:grid-cols-2 gap-5">
          {
             searchData.map(data=><div key={data._id}>
                     <div  className="card bg-base-100 shadow-xl">
@@ -90,8 +90,8 @@ const AllBlogs = () => {
                     <p>{data.shortDes}</p>
                   }
                   <div className=" justify-end space-x-10">
-                    <Link to='/details' state={data}><button className="btn btn-primary" >Details</button></Link>
-                    <button onClick={()=>handledatabase(data,useremail)} className="btn btn-primary" >Wishlist</button>
+                    <Link to='/details' state={data}><button className="md:btn lg:btn md:btn-primary lg:btn-primary px-2 py-2 bg-blue-500 rounded-lg text-white" >Details</button></Link>
+                    <button onClick={()=>handledatabase(data,useremail)} className="md:btn lg:btn md:btn-primary lg:btn-primary px-2 py-2 bg-blue-500 rounded-lg text-white" >Wishlist</button>
                   </div>
                 </div>
               </div>

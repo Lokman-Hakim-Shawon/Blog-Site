@@ -50,13 +50,12 @@ const Navbar = () => {
             " "
            }
           </div>
-         
          Log Out
        </button>
       :   
-    <div className='space-x-5'>
-      <Link to='/login'><button className="btn">Login</button></Link>
-    <Link to='/register'><button className="btn">Register</button></Link>
+    <div className='space-x-2 lg:space-x-5'>
+      <Link to='/login'><button className="lg:btn">Login</button></Link>
+    <Link to='/register'><button className="lg:btn">Register</button></Link>
     </div>
     }
     

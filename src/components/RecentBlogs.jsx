@@ -57,8 +57,8 @@ const RecentBlogs = () => {
                     <p>{datas.shortDes}</p>
                   }
                   <div className=" justify-end space-x-10">
-                    <Link to='/details' state={datas}><button className="btn btn-primary" >Details</button></Link>
-                    <button onClick={()=>handledatabase(datas,useremail)} className="btn btn-primary" >Wishlist</button>
+                    <Link to='/details' state={datas}><button className="md:btn lg:btn md:btn-primary lg:btn-primary px-5 py-2 bg-blue-500 rounded-lg text-white" >Details</button></Link>
+                    <button onClick={()=>handledatabase(datas,useremail)} className="md:btn lg:btn md:btn-primary lg:btn-primary px-2 py-2 bg-blue-500 rounded-lg text-white" >Wishlist</button>
                   </div>
                 </div>
               </div>)
